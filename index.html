@@ -1,79 +1,118 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>First practical work</title>
+    <link rel="stylesheet" href="style.css">
+    <title>TechCon</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <a href="/"><img src="img/logo1.png" alt="Logo"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">First page</a></li>
-                <li><a href="#">Second page</a></li>
-                <li><a href="#">Third page</a></li>
-            </ul>
+    <header class="header">
+        <nav class="header__nav" style="background-color: black;">
+            <div class="header__logo">
+                <a href="/"><img src="img/techcon-logo.png" alt="Logo"></a>
+            </div>
+            <div class="hader__menu">
+                <a class="header__menu-item" href="#">Subjects</a>
+                <a class="header__menu-item" href="#">Speakers</a>
+                <a class="header__menu-item" href="#">About</a>
+                <a class="header__menu-item" href="#">Schedule</a>
+                <a class="header__menu-item" href="#">Sponsors</a>
+                <a class="header__menu-item" href="#">Location</a>
+                <a class="header__button-buy btn" href="#">Buy a ticket</a>
+            </div>
         </nav>
-        <hr>
     </header>
     <main>
-        <img src="img/ac68e9ede5b84d83bf172fa518f03461.gif" alt="Test gif" width="500">
-        <hr>
-        <section>
-            <h1>Lorem, ipsum.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse eius obcaecati vel sapiente
-                dicta fuga distinctio consectetur vero eaque! Totam fugiat, quidem, voluptatum dolorum accusamus unde
-                est corrupti dolor ad labore sed officia saepe quod tempora, rem quaerat tempore ducimus at minima?
-                Repudiandae iste cupiditate minus eum, sint optio labore explicabo, laborum nesciunt, dolor expedita
-                sunt culpa ipsum laudantium officia inventore dolorem quam doloribus dolores totam architecto libero
-                vero! Ipsum, reprehenderit numquam beatae et, aspernatur aperiam veniam temporibus, ullam excepturi
-                explicabo laudantium quae repellat nihil animi adipisci eos! Voluptatibus perferendis corporis eius, sit
-                accusantium dolore maxime eos obcaecati at earum quo eligendi incidunt quibusdam? Non nesciunt natus
-                pariatur, voluptate asperiores, aspernatur, repellendus quidem animi atque cum vitae. Veritatis
-                consectetur expedita alias, ut vel placeat. Cum numquam, minima pariatur cumque repudiandae assumenda
-                sequi eaque quis qui facilis aliquam sed rgerum saepe laudantium aspernatur nesciunt commodi iusto beatae
-                reiciendis reprehenderit molestias cupiditate unde? Ex minima praesentium obcaecati, unde, cupiditate
-                totam sit animi aperiam dignissimos consequatur incidunt error, nihil perferendis. Distinctio cum rerum
-                eos laudantium eum dolorum aliquid est hic debitis officiis qui, voluptates dolor! Earum doloremque
-                facilis maiores excepturi eum beatae deserunt at, quam illum provident, corrupti pariatur optio vero
-                cupiditate?</p>
-        </section>
-        <div class="container">
-            <hr>
-            <form action="https://softserveinc.com/">
-                <h2>Type your name & contacts & birthdate there:</h2>
-                <input type="text" placeholder="Your name" required id="name">
-                <input type="text" placeholder="Your contacts" required id="contacts"><br><br>
-                <h3>Choose your communication method:</h3>
-                <label for="discord"><input id="discord" type="radio" name="contact" value="discord"> Discord</label>
-                <label for="phonenumber"><input id="phonenumber" type="radio" name="contact" value="phonenumber"> Phone
-                    Number</label>
-                <label for="mail"><input id="mail" type="radio" name="contact" value="mail"> Mail</label>
-                <h3>Choose your birthdate:</h3>
-                <label for="birth"><input type="date" id="birth" min="1900-01-01" max="2023-01-01" required><br><br></label>
-                <button style="width:200px;height:70px" type="submit">Send</button><br>
-            </form>
+        <div class="main">
+            <div class="techcon__info">
+                <h1>TechCon</h1>
+                <p class="techcon__info-text">NY Technology, Design &
+                    Innovation Conference held
+                    on September 17, 2018.</p>
+            </div>
+            <div class="techcon__contact-us-form">
+                <form action="#">
+                    <p class="techcon__offer">Want to Become a Speaker?</p>
+                    <p class="techcon__contact-us">Contact us to join the TechCon speaker list!</p>
+                    <input type="text" name="name" placeholder="Name*" id="name" required>
+                    <input type="tel" name="tel" placeholder="Phone number*" id="phone number" required>
+                    <input type="email" name="email" placeholder="Email*" id="email" required>
+                    <input type="submit" value="Apply">
+                </form>
+                <div class="starts-countdown">
+                    <div class="starts__content">
+                        <p class="starts-countdown__text">It Starts in...</p>
+                    </div>
+                    <div class="starts-countdown__item">
+                        <p class="starts__num">0</p>
+                        <p class="starts__time">Days</p>
+                    </div>
+                    <div class="starts-countdown__item">
+                        <p class="starts-countdown__num">0</p>
+                        <p class="starts-countdown__time">Hours</p>
+                    </div>
+                    <div class="starts-countdown__item">
+                        <p class="starts-countdown__num">0</p>
+                        <p class="starts-countdown__time">Minutes</p>
+                    </div>
+                    <div class="starts-countdown__item">
+                        <p class="starts-countdown__num">0</p>
+                        <p class="starts-countdown__time">Seconds</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="techcon-explanation">
+                <h2 class="techcon-explanation__whatis">What Is TechCon?</h2>
+                <p class="techcon-explanation__content">TechCon is a four-day conference focused on technology, design,
+                    and innovation. It is meant to bring together designers, innovators, and inspired entrepreneurs from
+                    all over the world. TechCon is all about friendly community, challenging ideas, essential insights,
+                    and endless inspiration.</p>
+                <p class="techcon-explanation__content">During the conference, you'll be able to learn from those
+                    thriving in the industry and acquire resources and knowledge to become better in your craft.</p>
+            </div>
+            <div class="techcon-socials">
+                <h3 class="techcon-socials__follow-us">Follow us:</h3>
+                <span class="techcon-socials__logos">
+                    <a class="techcon-socials__fb" href="https://www.facebook.com"><img src="img/fb-icon.svg"
+                            alt="Facebook Logo" width="32"></a>
+                    <a class="techcon-socials__twitter" href="https://twitter.com"><img src="img/twitter-icon.svg"
+                            alt="Twitter Logo" width="32"></a>
+                    <a class="techcon-socials__youtube" href="https://www.youtube.com"><img src="img/yt-icon.svg"
+                            alt="YouTube Logo" width="32"></a>
+                    <a class="techcon-socials__telegram" href="https://telegram.org"><img src="img/tg-icon.svg"
+                            alt="Telegram Logo" width="32"></a>
+                </span>
+            </div>
+            <div class="techcon_button button button-active">
+                <a href="#" class="techcon_button__link"><p class="techcon_button-text">Learn more</p></a>
+            </div>
+
+            <div class="techcon__photos">
+                <img src="img/photo1.jpg" alt="Photo office" width="480"> 
+                <img src="img/photo2.jpg" alt="Photo office" width="480">
+                <img src="img/photo3.jpeg" alt="Photo office" width="480">
+                <img src="img/photo4.jpeg" alt="Photo office" width="480">
+            </div>
+
+
+
+
+
+
+
+
+
+
         </div>
-        <hr>
     </main>
     <footer>
-        <div>
-            <h2>Useful links</h2>
-            <ul>
-                <li><a href="#">F.A.Q.</a></li>
-                <li><a href="#">Rules</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of use</a></li>
-            </ul>
-        </div>
-        <hr>
-        <span>© 2023.</span>
+
     </footer>
 </body>
 
