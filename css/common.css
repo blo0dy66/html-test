@@ -39,3 +39,6 @@ h1 {
     color: var(--title-color);
   }
 
+  .call-us__icon img {
+    width: 24px;
+}
