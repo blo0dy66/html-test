@@ -1,38 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"); /*  font-family: 'Permanent Marker', cursive;  */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"); /*  font-family: 'Lato', sans-serif;   */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"); /* font-family: 'Rubik', sans-serif;  */
+/* Rubik+Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@400;500&display=swap'); 
+
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  max-width: 1200px;
-}
-
-h2 {
-  font-family: "Permanent Marker", cursive;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--title-color);
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
 
 :root {
-  --title-color: rgb(231, 49, 35);
-  --subtitle-color: rgb(69, 69, 69);
-  --text-color: rgb(103, 103, 103);
-  --subtext-color: rgb(40, 38, 35);
-  --button-color: rgb(255, 255, 255);
+    --title-color: rgb(4, 15, 115);
+    --subtitle-color:rgb(66, 72, 117);
+    --text-color: rgb(106, 110, 143);
+    --sign-color: rgb(255, 91, 46);
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
 img {
-  display: block;
-  width: 100%;
+    width: 100%;
+    display: block;
 }
 
-.container {
-  margin:auto
-  max-width:1200px;
+h1 {
+    font-family: "Rubik", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--title-color);
+  }
 
+
+  h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--title-color);
+  }
+
+  .call-us__icon img {
+    width: 24px;
 }
